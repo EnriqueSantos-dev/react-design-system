@@ -1,0 +1,10 @@
+import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
+import { Check } from "phosphor-react";
+
+export const Checkbox: React.FC = () => (
+  <CheckboxPrimitive.Root className="flex items-center p-[2px] w-6 h-6 bg-gray-800 rounded">
+    <CheckboxPrimitive.Indicator asChild>
+      <Check weight="bold" className="h-5 w-5 text-cyan-500" />
+    </CheckboxPrimitive.Indicator>
+  </CheckboxPrimitive.Root>
+);
