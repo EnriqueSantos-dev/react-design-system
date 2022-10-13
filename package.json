@@ -11,10 +11,12 @@
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "gh-pages -d storybook-static"
   },
   "lint-staged": {
-    "./src/**/*": ["yarn lint"]
+    "./src/**/*": [
+      "yarn lint"
+    ]
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.0",
